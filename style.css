@@ -1,0 +1,64 @@
+
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  background-color: rgb(14, 12, 12);
+
+}
+
+h1{
+  text-align: center;
+  color: aquamarine;
+}
+
+.app{
+  display: grid;
+  width: 300px;
+
+  grid-template-columns: 25% 25% 25% 25%;
+  margin: 0 auto;
+  grid-template-rows: 50px repeat(5, 30px);
+  grid-template-areas:
+  "res res res res"
+  "7 8 9 reset"
+  "4 5 6 reset"
+  "1 2 3 reset"
+  "0 dot plus minus"
+  "equal equal times div";
+  border: 2px solid teal;
+  border-radius: 5px;
+  background-color: rgb(255, 243, 243);
+  position: relative;
+
+}
+
+h3 {
+  text-align: right;
+  margin: 7px 10px 0 0;
+  font-size: 2rem;
+  grid-area: res;
+}
+button{
+  cursor: pointer;
+  background-color: teal;
+  color: white;
+  border: 1px solid rgb(243, 248, 248);
+  border-radius: 5px;
+  transition: 0.2s;
+
+}
+
+button:hover{
+  background-color: rgb(30, 145, 145);
+
+}
+
+#equal{
+  grid-area: equal;
+}
+
+#clear {
+  grid-area: reset;
+}
